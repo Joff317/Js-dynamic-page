@@ -86,6 +86,26 @@ document.querySelectorAll('section a')[0].addEventListener('click', (e) => {
 })
 
 
-
+//9
+document.querySelector('.navbar-brand').addEventListener('keypress', (e) => {
+   let body = document.body
+   switch(e.key) {
+      case 'a':
+         body.classList.add('col-4');
+         body.classList.remove('offset-md-4', 'offset-md-8')
+         break;
+      case 'y':
+         body.classList.add('col-4', 'offset-md-4');
+         body.classList.remove('offset-md-8')
+         break;
+      case 'p':
+         body.classList.add('col-4', 'offset-md-8');
+         body.classList.remove('offset-md-4')
+         break;
+      case 'b':
+         body.classList = " "
+      break;            
+   } 
+})
 
 
